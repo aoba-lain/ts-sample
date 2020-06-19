@@ -1,5 +1,6 @@
 class Animal {
   name: string;
+
   sound: string;
 
   constructor(name: string, sound: string) {
@@ -7,7 +8,7 @@ class Animal {
     this.sound = sound;
   }
 
-  cry = () => {
+  cry = (): void => {
     console.info(`${this.name}「${this.sound}」`);
   };
 }
